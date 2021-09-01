@@ -1,0 +1,11 @@
+You are going to add a true/false type question to the question hierachy. Call it TrueFalseQuestion
+
+1. We want the "Answer True or False: " to be prepended automatically.
+So if the user sets the text of the Question to "Albert Einstein was the inventer of Java." the TrueFalseQuestion will be displayed to the user like this
+
+	Answer True or False: Albert Einstein was the inventer of Java.
+
+2. Capitalization should not matter when determining if the answer is correct. Also 't' for true and 'f' for false should be accepted.
+
+You will need to override three methods although not everyone will override the
+exact same three methods. You cannot change the Question class at all. You will not need to add instance variables
