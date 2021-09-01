@@ -5,4 +5,7 @@ each will inherit from Sandwich, Salad, and Drink respectively.
 Note: As these classes inherit from superclasses that implement the MenuItem interface, they will themselves also be MenuItems! So, you do
 not need to re-implement this interface.
 
-The name and the price of the 
+The name and the price of each item is fixed.
+  ClubSandwich: "Club Sandwich"; 2.75
+  SpinachSalad: "Spinach Salad"; 1.25
+  Cappuccino: "Cappuccino"; 3.50
