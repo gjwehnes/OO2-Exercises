@@ -1,3 +1,5 @@
+The next two exercises are adapted from the AP 2014 exam.
+
 The menu at a lunch counter includes a variety of sandwiches, salads, and drinks. The menu also allows a
 customer to create a "trio," which consists of three menu items: a sandwich, a salad, and a drink. The price
 of the trio is the sum of the two highest-priced menu items in the trio; one item with the lowest price is free.
