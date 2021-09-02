@@ -12,7 +12,7 @@ public class TrioTest {
 		Drink drink1 = new Drink("Orange Soda", 1.25);
 		Salad salad1 = new Salad("Spinach Salad", 1.25);
 				
-		Trio trio1 = new Trio(sandwich1, salad1, drink1);		
+		Trio trio1 = new Trio(sandwich1, salad1, drink1);
 		assertEquals("Cheeseburger/Spinach Salad/Orange Soda Trio", trio1.getName());
 		assertEquals(4.00, trio1.getPrice(), 0.0);
 		
