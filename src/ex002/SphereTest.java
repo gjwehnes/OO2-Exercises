@@ -6,7 +6,7 @@ public class SphereTest extends TestCase
 {
    public void test()
    {
-       //Sphere class constructor takes in one paramter: double radius
+       //Sphere class constructor takes in one parameter: double radius
        GeometricSolid solid = new Sphere(10.0);
       
        //volume should be (4/3)(pi)(r ^ 3)
