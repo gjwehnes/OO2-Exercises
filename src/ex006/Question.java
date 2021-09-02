@@ -1,4 +1,4 @@
-package ex005;
+package ex006;
 // This is provided for reference. You don't need to modify this file
 
 /**

@@ -1,4 +1,4 @@
-package ex005;
+package ex006;
 import static org.junit.Assert.*;
 
 import java.io.ByteArrayInputStream;
