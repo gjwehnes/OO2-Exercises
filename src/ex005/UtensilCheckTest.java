@@ -34,8 +34,8 @@ public class UtensilCheckTest {
 		assertEquals(false, UtensilCheck.requireSpoon(drink));
 		
 		Cappuccino cappuccino = new Cappuccino();
-		assertEquals(false, UtensilCheck.requireStraw(drink));
-		assertEquals(true, UtensilCheck.requireStraw(cappuccino));
+		assertEquals(true, UtensilCheck.requireStraw(drink));
+		assertEquals(false, UtensilCheck.requireStraw(cappuccino));
 		
 	}
 
