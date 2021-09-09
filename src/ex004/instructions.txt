@@ -8,6 +8,6 @@ not need to re-implement this interface.
 The name and the price of each item is fixed. Thus, you should implement
 a constructor with zero arguments (the default constructor) which sets
 the values as follows:
-  ClubSandwich: "Club Sandwich"; 2.75
+  ClubSandwich: "Club Sandwich"; 2.75 
   SpinachSalad: "Spinach Salad"; 1.25
   Cappuccino: "Cappuccino"; 3.50
