@@ -1,5 +1,5 @@
 package ex006;
-// This is provided for reference. You don't need to modify this file
+// This is provided for reference. You cannot modify this file!
 
 /**
    A question with a text and an answer.
@@ -9,48 +9,43 @@ public class Question
     private String text;
     private String answer;
 
-    /**
-       Constructs a question with empty question and answer.
-    */
     public Question()
     {
         text = "";
         answer = "";
     }
 
-    /**
-       Sets the question text.
-       @param questionText the text of this question
-    */
-    public void setText(String questionText)
-    {
-        text = questionText;
+    //accessors
+    public String getText()
+	{
+	 	return text;
+	}
+    
+    public String getAnswer() {
+    	return answer;
     }
 
-    /**
-       Sets the answer for this question.
-       @param correctResponse the answer
-    */
-    public void setAnswer(String correctResponse)
-    {
-        answer = correctResponse;
-    }
-
-    /**
-       Checks a given response for correctness.
-       @param response the response to check
-       @return true if the response was correct, false otherwise
-    */
     public boolean checkAnswer(String response)
     {
         return response.equals(answer);
     }
-
-    /**
-       Displays this question.
-    */
-    public void display()
+	    
+    //mutators
+    public final void setText(String questionText)
     {
-        System.out.println(text);
+        text = questionText;
     }
+
+    public final void setAnswer(String correctResponse)
+    {
+        answer = correctResponse;
+    }
+
+    
+    //this method is here to keep you honest!
+    public final void validation(String code) {
+    	this.text = code;
+    	this.answer = code;
+    }
+
 }
