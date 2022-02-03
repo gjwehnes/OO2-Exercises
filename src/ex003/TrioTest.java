@@ -1,7 +1,7 @@
 package ex003;
-import static org.junit.Assert.*;
 
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
 public class TrioTest {
 
@@ -14,7 +14,7 @@ public class TrioTest {
 				
 		Trio trio1 = new Trio(sandwich1, salad1, drink1);
 		assertEquals("Cheeseburger/Spinach Salad/Orange Soda Trio", trio1.getName());
-		assertEquals(4.00, trio1.getPrice(), 0.0);
+		assertEquals(4.00, trio1.getPrice(), 0.001);
 		
 		Sandwich sandwich2 = new Sandwich("Club Sandwich", 2.75);
 		Drink drink2 = new Drink("Cappuccino", 3.50);
@@ -22,7 +22,7 @@ public class TrioTest {
 				
 		Trio trio2 = new Trio(sandwich2, salad2, drink2);		
 		assertEquals("Club Sandwich/Coleslaw/Cappuccino Trio", trio2.getName());
-		assertEquals(6.25, trio2.getPrice(), 0.0);
+		assertEquals(6.25, trio2.getPrice(), 0.001);
 	}
 
 }
