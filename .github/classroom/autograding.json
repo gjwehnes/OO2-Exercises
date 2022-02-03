@@ -3,7 +3,7 @@
     {
       "name": "test1",
       "setup": "",
-      "run": "gradle test --tests ex001/UnitCircleTest",
+      "run": "gradle test --tests ex001.UnitCircleTest",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -23,7 +23,7 @@
     {
       "name": "test3",
       "setup": "",
-      "run": "gradle test --tests ex003.SphereTest",
+      "run": "gradle test --tests ex002.SphereTest",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -41,7 +41,7 @@
       "points": 1
     },
     {
-      "name": "test5,
+      "name": "test5",
       "setup": "",
       "run": "gradle test --tests ex003.TrioTest",
       "input": "",
@@ -51,7 +51,7 @@
       "points": 1
     },
     {
-      "name": "test6,
+      "name": "test6",
       "setup": "",
       "run": "gradle test --tests ex004.ExtensionTest",
       "input": "",
@@ -61,7 +61,7 @@
       "points": 1
     },
     {
-      "name": "test7,
+      "name": "test7",
       "setup": "",
       "run": "gradle test --tests ex005.UtensilCheckTest",
       "input": "",
@@ -71,7 +71,7 @@
       "points": 1
     },
     {
-      "name": "test8,
+      "name": "test8",
       "setup": "",
       "run": "gradle test --tests ex006.TrueFalseQuestionTest",
       "input": "",
