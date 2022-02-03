@@ -1,8 +1,9 @@
 package ex002;
 
-import junit.framework.TestCase;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
-public class GeometricSolidTest extends TestCase implements GeometricSolid 
+public class GeometricSolidTest implements GeometricSolid 
 {
 	@Override
     public double getVolume() {
@@ -13,7 +14,8 @@ public class GeometricSolidTest extends TestCase implements GeometricSolid
 	public double getSurfaceArea() {
 		return 0;
 	}
-	
+
+	@Test
    public void test()
    {
 	   //dummy test... as long as this test compiles, the interface is written correctly
