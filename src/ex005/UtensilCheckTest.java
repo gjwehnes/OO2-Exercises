@@ -1,8 +1,7 @@
 package ex005;
 
-import static org.junit.Assert.*;
-
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
 import ex003.Drink;
 import ex003.Salad;
@@ -38,6 +37,5 @@ public class UtensilCheckTest {
 		assertEquals(false, UtensilCheck.requireStraw(cappuccino));
 		
 	}
-
 
 }
