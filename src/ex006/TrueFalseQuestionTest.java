@@ -1,17 +1,11 @@
 package ex006;
-import static org.junit.Assert.*;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
-import java.io.PrintStream;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
-import org.junit.Test;
+public class TrueFalseQuestionTest {
 
-import junit.framework.TestCase;
-
-public class TrueFalseQuestionTest extends TestCase {
-
+	@Test
 	public void testCorrectResponses() {
 
 		TrueFalseQuestion tfq = new TrueFalseQuestion();
