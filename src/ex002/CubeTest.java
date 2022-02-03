@@ -1,10 +1,13 @@
 package ex002;
 
-import junit.framework.TestCase;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
-public class CubeTest extends TestCase
+public class CubeTest
 {
-   public void test()
+
+	@Test
+	public void test()
    {
 
        //Cube class constructor takes in one paramter: double sideLength
