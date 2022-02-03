@@ -1,16 +1,14 @@
 package ex001;
 
-import static org.junit.Assert.*;
-
-import org.junit.Test;
-
-import junit.framework.TestCase;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
 //Create a UnitCircle class which implements the Comparable interface.
 //Refer to the unit test for expected behaviour.
 
-public class UnitCircleTest extends TestCase {
+public class UnitCircleTest  {
 
+	@Test
 	public void testCompareTo1() {
 		UnitCircle c1 = new UnitCircle(1);
 		UnitCircle c2 = new UnitCircle(3);
@@ -21,6 +19,7 @@ public class UnitCircleTest extends TestCase {
 		assertEquals(0, c2.compareTo(c3));		
 	}
 
+	@Test
 	public void testCompareTo2() {
 		UnitCircle c1 = new UnitCircle(50);
 		UnitCircle c2 = new UnitCircle(5000);
@@ -31,6 +30,7 @@ public class UnitCircleTest extends TestCase {
 		assertEquals(0, c2.compareTo(c3));		
 	}
 	
+	@Test
 	public void testToString() {
 		UnitCircle c1 = new UnitCircle(1);
 		UnitCircle c2 = new UnitCircle(3);
@@ -45,4 +45,3 @@ public class UnitCircleTest extends TestCase {
 	}
 
 }
-
