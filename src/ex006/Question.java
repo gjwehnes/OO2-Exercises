@@ -42,7 +42,9 @@ public class Question
     }
 
     
-    //this method is here to keep you honest!
+	//This method is here to ensure that that the superclass's instance variables are being used instead of
+    //instance variables in subclasses. You would not want to have different answers at different layers of 
+    //your hierarchy.
     public final void validation(String code) {
     	this.text = code;
     	this.answer = code;
