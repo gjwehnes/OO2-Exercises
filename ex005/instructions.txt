@@ -11,7 +11,7 @@
   require both knife and fork; Salads require only a fork; Drinks require neither knife nor fork; a Drink usually
   requires a straw, unless it is a Cappuccino, in which case it requires a spoon but not a straw.
   
-  Hint: You will need to determine the type of your parameter at run-time. You can do this using either the instanceof operator
+  Hint: You will need to determine the type of your MenuItem at run-time. You can do this using either the instanceof operator
   or the object's .class() method. You are free to use either, but be aware of the difference between them (i.e. look it up!)
     
     

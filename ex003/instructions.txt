@@ -15,7 +15,8 @@ drink.
 A. Write the Trio class that implements the MenuItem interface. Your implementation must include a
 constructor that takes three parameters representing a Sandwich, Salad, and Drink object 
 
-B. Create the Drink, Salad, and Sandwich classes. All these classes should implement the MenuItem
+B. Create the Drink, Salad, and Sandwich classes. All these classes should implement the MenuItem. Ensure that you
+properly encapsulate your instance variables.
 
 Once you have your class hierarchy set up, your code will need to implement the following behaviour
 
