@@ -1,4 +1,3 @@
-package ex006;
 // This is provided for reference. You cannot modify this file!
 
 /**
