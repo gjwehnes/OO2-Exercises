@@ -1,0 +1,4 @@
+### GeometricSolid
+Create an interface GeometricSolid which contains two methods: getVolume and getSurfaceArea.
+
+Then, create a Cube class and a Sphere class which both implement the GeometricSolid interface.
