@@ -1,20 +1,113 @@
-### TrueFalseQuestion
-You have a class Question which can be used in a Quiz application. The design of this class is maybe a bit odd,
-and the challenge is that you CANNOT change the Question class in any way.
+### Exercise: TrueFalseQuestion
 
-Nonetheless, you are going to create a subclass of Question called TrueFalseQuestion.
+#### Background
 
-The TrueFalseQuestion class needs to implement the following behaviour:
+You are given a class named **Question** that is used in a quiz application.
 
-1. We want the "Answer True or False: " to be prepended automatically to the question text.
-e.g. If the user sets the text of the Question to "Albert Einstein was the inventer of Java." the TrueFalseQuestion.getText will be displayed to the user like this
+The design of this class presents an important challenge: **you may not modify the Question class in any way**. This simulates a common real-world scenario where a class is provided by a third-party library and its source code cannot be changed.
 
-	Answer True or False: Albert Einstein was the inventer of Java.
+Your task is to extend the existing functionality by creating a subclass named **TrueFalseQuestion**.
 
-2. Capitalization should not matter when determining if the answer is correct. 
+#### Requirements
 
-3. 't' for true and 'f' for false should be accepted as response.
+##### 1. Create the TrueFalseQuestion Class
 
-Note that some of the superclass methods are set to 'final, which means you cannot override them.
-Hint: you will need to override those methods not set to final and thereby modify the behaviour of the superclass without replacing it.
+Create a class named:
+- TrueFalseQuestion
 
+The class must inherit from **Question**.
+
+You must work within the constraints imposed by the superclass and preserve its existing behavior wherever possible.
+
+#### Required Behavior
+
+##### 2. Automatically Prefix the Question Text
+
+All TrueFalseQuestion objects should automatically display the following prompt before the question text:
+
+```text
+Answer True or False:
+```
+
+###### Example
+
+If the question text is:
+
+```text
+Albert Einstein was the inventer of Java.
+```
+
+The text presented to the user should be:
+
+```text
+Answer True or False: Albert Einstein was the inventer of Java.
+```
+
+##### 3. Ignore Capitalization When Checking Answers
+
+Answer validation must be case-insensitive.
+
+For example, if the correct answer is:
+
+```text
+true
+```
+
+Then all of the following responses should be considered equivalent:
+
+```text
+true
+TRUE
+True
+tRuE
+```
+
+##### 4. Accept Abbreviated Responses
+
+In addition to the full responses:
+
+```text
+true
+false
+```
+
+The following abbreviations must also be accepted:
+
+```text
+t
+f
+```
+
+##### 5. Respect Final Methods
+
+Some methods in the Question class have been declared as **final**.
+
+Because final methods cannot be overridden:
+- Do not attempt to replace their implementation.
+- Instead, modify behavior by overriding only the methods that are not final.
+- Use inheritance to extend the functionality of the superclass.
+
+#### Implementation Notes
+
+A successful solution will adapt the behavior of Question without modifying its source code.
+
+Consider carefully which methods can be overridden and how those methods can be used to influence the behavior of inherited functionality.
+
+#### What Your Implementation Should Support
+
+Your solution should allow:
+- Creation of TrueFalseQuestion objects.
+- Automatic addition of the "Answer True or False:" prompt.
+- Case-insensitive answer checking.
+- Acceptance of both full-word and abbreviated responses.
+- Proper use of inheritance.
+- Extension of superclass behavior without modifying the Question class.
+
+#### Learning Goals
+
+By completing this exercise, you will practice:
+- Inheritance.
+- Method overriding.
+- Working with final methods.
+- Extending third-party classes.
+- Designing subclasses that adapt existing behavior.
