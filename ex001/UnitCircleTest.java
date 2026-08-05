@@ -1,9 +1,6 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-//Create a UnitCircle class which implements the Comparable interface.
-//Refer to the unit test for expected behaviour.
-
 public class UnitCircleTest  {
 
 	@Test
@@ -41,5 +38,12 @@ public class UnitCircleTest  {
 		assertEquals("UnitCircle[r=9]", c4.toString());		
 
 	}
+
+	@Test
+	public void testExtension() {
+		UnitCircle c1 = new UnitCircle(1);
+		assertEquals(true, c1 instanceof Comparable);
+	}
+
 
 }
