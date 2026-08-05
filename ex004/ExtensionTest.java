@@ -16,4 +16,19 @@ public class ExtensionTest {
 		
 	}
 
+	@Test
+	public void testExtension() {
+		Cappuccino cappuccino = new Cappuccino();
+		ClubSandwich clubSandwich = new ClubSandwich();
+		SpinachSalad spinachSalad = new SpinachSalad();
+
+		assertEquals(true, cappuccino instanceof Drink);
+		assertEquals(true, cappuccino instanceof MenuItem);
+		assertEquals(true, cappuccino instanceof Sandwich);
+		assertEquals(true, cappuccino instanceof MenuItem);
+		assertEquals(true, cappuccino instanceof Salad);
+		assertEquals(true, cappuccino instanceof MenuItem);
+	}
+
+
 }
