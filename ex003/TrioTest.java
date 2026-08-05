@@ -9,7 +9,12 @@ public class TrioTest {
 		Sandwich sandwich1 = new Sandwich("Cheeseburger", 2.75);
 		Drink drink1 = new Drink("Orange Soda", 1.25);
 		Salad salad1 = new Salad("Spinach Salad", 1.25);
-				
+
+		assertEquals(true, sandwich1 instanceof MenuItem);
+		assertEquals(true, drink1 instanceof MenuItem);
+		assertEquals(true, salad1 instanceof MenuItem);
+		
+
 		Trio trio1 = new Trio(sandwich1, salad1, drink1);
 		assertEquals("Cheeseburger/Spinach Salad/Orange Soda Trio", trio1.getName());
 		assertEquals(4.00, trio1.getPrice(), 0.001);
@@ -23,4 +28,14 @@ public class TrioTest {
 		assertEquals(6.25, trio2.getPrice(), 0.001);
 	}
 
+	@Test
+	public void testExtension() {
+		Sandwich sandwich1 = new Sandwich("Cheeseburger", 2.75);
+		Drink drink1 = new Drink("Orange Soda", 1.25);
+		Salad salad1 = new Salad("Spinach Salad", 1.25);
+
+		assertEquals(true, sandwich1 instanceof MenuItem);
+		assertEquals(true, drink1 instanceof MenuItem);
+		assertEquals(true, salad1 instanceof MenuItem);
+	}	
 }
