@@ -29,4 +29,11 @@ public class SphereTest
 		assertEquals(326.85, solid.getSurfaceArea(), 0.01);
 
 	}
+
+	@Test
+	public void testExtension() {
+		Sphere c1 = new Sphere(0);
+		assertEquals(true, c1 instanceof GeometricSolid);
+	}
+
 }

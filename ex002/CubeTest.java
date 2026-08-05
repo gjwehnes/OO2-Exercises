@@ -30,4 +30,11 @@ public class CubeTest
        assertEquals(54.00, solid.getSurfaceArea(), 0.01);
 
    }
+
+	@Test
+	public void testExtension() {
+		Cube c1 = new Cube(0);
+		assertEquals(true, c1 instanceof GeometricSolid);
+	}
+
 }

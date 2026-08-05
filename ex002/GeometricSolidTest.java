@@ -5,7 +5,7 @@ public class GeometricSolidTest implements GeometricSolid
 {
 	@Override
     public double getVolume() {
-        return 0;
+        return 0;   
     }
 
 	@Override
@@ -16,9 +16,8 @@ public class GeometricSolidTest implements GeometricSolid
 	@Test
    public void test()
    {
-	   //dummy test... as long as this test compiles, the interface is written correctly
+	   //dummy test... as long as this test compiles, the interface exists and is written correctly
        assertEquals(true,true);
    }
-	
 
 }
