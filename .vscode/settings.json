@@ -1,7 +1,19 @@
 {
-    "java.project.sourcePaths": ["ex001", "ex002", "ex003", "ex004", "ex005", "ex006"],
+    "java.project.sourcePaths": [
+        "ex001",
+        "ex002",
+        "ex003",
+        "ex004",
+        "ex005",
+        "ex006",
+        "ex009",
+        "ex007",
+        "ex008"
+    ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
-    ]
+    ],
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.format.settings.url": "eclipse-formatter.xml"
 }
